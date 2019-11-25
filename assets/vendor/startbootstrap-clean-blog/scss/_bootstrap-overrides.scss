@@ -6,6 +6,7 @@
   letter-spacing: 1px;
   text-transform: uppercase;
   border-radius: 0;
+  font-family: 'Raleway', sans-serif;
   @include sans-serif-font;
 }
 
@@ -24,4 +25,15 @@
 .btn-lg {
   font-size: 16px;
   padding: 25px 35px;
+}
+#avatar {
+  float: left;
+  
+}
+#avatar img {
+width: 30px;
+border-radius: 50%;
+height: 100%;
+display: block;
+margin: auto;
 }
