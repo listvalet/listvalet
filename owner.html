@@ -1,0 +1,28 @@
+---
+layout: page
+title: Owner Resources
+background: '/img/ownerStock/shopping-phone.jpg'
+---
+
+<div class="row">
+  {% for pp in site.owner %}
+    <div class="col-4">
+      <a href="{{ pp.url | prepend: site.baseurl | replace: '//', '/' }}">
+        <img src="{{ pp.thumbnail | prepend: site.baseurl | replace: '//', '/' }}" class="img-thumbnail" alt="Owner Resources">
+    </a>
+  </div>
+
+{% endfor %}
+</div>
+<div class="row mt-3 justify-center text-center">
+  {% for pp in site.owner %}
+    <div class="col-4">
+        <h4 class="pp-title text-center">{{ pp.title }}</h4>
+        {% if pp.description %}
+        <h5 class="pp-subtitle">{{ pp.description }}</h5>
+      {% endif %}
+    </a>
+  </div>
+
+{% endfor %}
+</div>
