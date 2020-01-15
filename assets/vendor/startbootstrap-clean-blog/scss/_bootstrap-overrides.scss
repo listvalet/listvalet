@@ -37,3 +37,24 @@ height: 100%;
 display: block;
 margin: auto;
 }
+
+img {
+  vertical-align: middle;
+  border-style: none;
+  object-fit: contain;
+  max-width: 100%;
+}
+.image-caption {
+  font-size: 15px; 
+  margin-top: -0.10rem !important;
+  text-align: center !important; 
+}
+
+.image{
+  position:relative;
+  overflow:hidden;
+}
+.image img{
+  border-width: 10px;
+  // position:absolute;
+}
