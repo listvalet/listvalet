@@ -4,28 +4,25 @@ title: Seller Resources
 background: '/img/sellerStock/foldingShirt.jpg'
 ---
 
-<div class="container">
-  <div class="row">
-    {% assign sorted_seller = site.seller | sort:'title' %}
-    {% for pp in sorted_seller %}
+<div class="row">
+  {% for pp in site.seller %}
     <div class="col-4">
-      <div class="row mt-4">
-          <div class="col">
-            <a href="{{ pp.url | prepend: site.baseurl | replace: '//', '/' }}">
-              <img src="{{ pp.thumbnail | prepend: site.baseurl | replace: '//', '/' }}" class="img-thumbnail" alt="seller Resources">
-          </a>
-        </div>
-      </div>
-      <div class="row mt-4 justify-center text-center">
-          <div class="col">
-              <h4 class="pp-title text-center">{{ pp.title }}</h4>
-              {% if pp.description %}
-              <h5 class="pp-subtitle">{{ pp.description }}</h5>
-            {% endif %}
-          </a>
-        </div>
-      </div>
-    </div>
-    {% endfor %}
+      <a href="{{ pp.url | prepend: site.baseurl | replace: '//', '/' }}">
+        <img src="{{ pp.thumbnail | prepend: site.baseurl | replace: '//', '/' }}" class="img-thumbnail" alt="Portfolio Piece">
+    </a>
   </div>
+
+{% endfor %}
+</div>
+<div class="row mt-3 justify-center text-center">
+  {% for pp in site.seller %}
+    <div class="col-4">
+        <h3 class="pp-title text-center">{{ pp.title }}</h3>
+        {% if pp.description %}
+        <h5 class="pp-subtitle">{{ pp.description }}</h5>
+      {% endif %}
+    </a>
+  </div>
+
+{% endfor %}
 </div>
