@@ -9,9 +9,9 @@ background: '/img/ownerStock/shopping-phone.jpg'
   <div class="row">
     {% assign sorted_owner = site.owner | sort:'title' %}
     {% for pp in sorted_owner %}
-    <div class="col-4">
+    <div class="col-lg-4 col-md-6 col-sm-12">
       <div class="row mt-4">
-          <div class="col">
+          <div class="col-12">
             <a href="{{ pp.url | prepend: site.baseurl | replace: '//', '/' }}">
               <img src="{{ pp.thumbnail | prepend: site.baseurl | replace: '//', '/' }}" class="img-thumbnail" alt="Owner Resources">
           </a>
