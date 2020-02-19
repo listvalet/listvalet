@@ -2,7 +2,7 @@
 #mainNav {
   position: absolute;
   border-bottom: 1px solid $gray-200;
-  background-color: white;
+  background-color: rgb(255, 82, 123);
   @include sans-serif-font;
   .navbar-brand {
     font-weight: 800;
@@ -27,7 +27,6 @@
   }
   @media only screen and (min-width: 992px) {
     border-bottom: 1px solid transparent;
-    background: transparent;
     .navbar-brand {
       padding: 10px 20px;
       color: $white;
@@ -68,7 +67,6 @@
       -moz-transition: -moz-transform 0.2s;
       transition: transform 0.2s;
       border-bottom: 1px solid darken($white, .05);
-      background-color: fade-out($white, .1);
       .navbar-brand {
         color: $gray-900;
         &:focus,
