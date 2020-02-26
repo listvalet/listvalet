@@ -55,23 +55,23 @@ blockquote {
 }
 
 ::-moz-selection {
-  color: $white;
+  color: rgb(255, 82, 123);
   background: $primary;
   text-shadow: none;
 }
 
 ::selection {
-  color: $white;
+  color: rgb(255, 82, 123);
   background: $primary;
   text-shadow: none;
 }
 
 img::selection {
-  color: $white;
+  color: rgb(255, 82, 123);
   background: transparent;
 }
 
 img::-moz-selection {
-  color: $white;
+  color: rgb(255, 82, 123);
   background: transparent;
 }
